@@ -25,6 +25,6 @@
    }
    catch(Exception e){ 
 	  
-       out.println(e.printstacktrace());       
+       out.println(e);       
    }      
 %>
