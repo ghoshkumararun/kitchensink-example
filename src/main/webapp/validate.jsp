@@ -24,7 +24,7 @@
            out.println("Invalid login credentials");            
    }
    catch(Exception e){ 
-	   e.printstacktrace();
-       out.println("Something went wrong !! Please try again");       
+	  
+       out.println(e.printstacktrace());       
    }      
 %>
