@@ -7,10 +7,14 @@
 <%@ page import ="java.sql.*" %>
 <%
     try{
+		String host = System.getenv("OPENSHIFT_MYSQL_DB_HOST");
+        String port = System.getenv("OPENSHIFT_MYSQL_DB_PORT");
+
+
         String username = request.getParameter("username");   
         String password = request.getParameter("password");
         Class.forName("com.mysql.jdbc.Driver");  // MySQL database connection
-        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/javademo?" + "user=root&password=");    
+        Connection conn = DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/"+test1+"?" + "user=&password=");    
         PreparedStatement pst = conn.prepareStatement("Select user,pass from login where user=? and pass=?");
         pst.setString(1, username);
         pst.setString(2, password);

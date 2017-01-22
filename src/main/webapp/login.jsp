@@ -17,13 +17,17 @@
 
 
 
-		<%
+		<% 
 		
 		String host = System.getenv("OPENSHIFT_MYSQL_DB_HOST");
         String port = System.getenv("OPENSHIFT_MYSQL_DB_PORT");
 
 		System.out.println(host  + ":"  + host);	
 		
+		out.println(host);
+		out.println(port);
+
+
 		%>
 
             <table border="1" cellpadding="5" cellspacing="2">
