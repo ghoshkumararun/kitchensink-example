@@ -13,7 +13,8 @@
         String username = request.getParameter("username");   
         String password = request.getParameter("password");
         Class.forName("com.mysql.jdbc.Driver");  // MySQL database connection
-        Connection conn = DriverManager.getConnection("jdbc:mysql://127.6.91.2:3306/test1?user=adminRDWfgs9&password=1Y7a316urqLq");    
+		//mysql://adminRDWfgs9:1Y7a316urqLq@127.6.91.2:3306/
+        Connection conn = DriverManager.getConnection("//mysql://adminRDWfgs9:1Y7a316urqLq@127.6.91.2:3306/");    
         PreparedStatement pst = conn.prepareStatement("Select user,pass from login where user=? and pass=?");
         pst.setString(1, username);
         pst.setString(2, password);
