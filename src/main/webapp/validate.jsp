@@ -13,8 +13,8 @@
         String password = request.getParameter("password");
         Class.forName("com.mysql.jdbc.Driver");  // MySQL database connection
 		//mysql://adminRDWfgs9:1Y7a316urqLq@127.6.91.2:3306/
-		String url="jdbc:mysql://127.6.91.2:3306/test1";
-        Connection conn = DriverManager.getConnection(url, "admin" , "Password");   
+		String url="jdbc:mysql://192.185.2.235:3306/opsoclou_openshift_billing";
+        Connection conn = DriverManager.getConnection(url, "opsoclou_os_user" , "Password@123");   
 		
 
 
