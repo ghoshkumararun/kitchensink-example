@@ -20,6 +20,9 @@
 		
 */
 
+ String username = request.getParameter("username");   
+        String password = request.getParameter("password");
+
 String USERNAME = System.getenv("OPENSHIFT_MYSQL_DB_USERNAME");
 String PASSWORD = System.getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
 String DB_NAME = System.getenv("OPENSHIFT_APP_NAME");
