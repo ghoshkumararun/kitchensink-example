@@ -14,20 +14,6 @@
         <form method="post" action="validate.jsp">
             <center>
 
-
-
-
-		<% 
-
-
-		System.out.println(host  + ":"  + host);	
-		
-		out.println(host);
-		out.println(port);
-
-
-		%>
-
             <table border="1" cellpadding="5" cellspacing="2">
                 <thead>
                     <tr>
