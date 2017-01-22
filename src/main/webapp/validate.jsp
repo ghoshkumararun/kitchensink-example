@@ -7,7 +7,7 @@
 <%@ page import ="java.sql.*" %>
 <%
     try{
-		String host = System.getenv("$OPENSHIFT_MYSQL_DB_HOST");
+		String host = System.getenv("OPENSHIFT_MYSQL_DB_HOST");
         
 		out.println(host);		
 
